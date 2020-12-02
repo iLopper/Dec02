@@ -1,0 +1,21 @@
+package Exersice;
+import java.util.Scanner;
+public class factorial {
+	public static void main(String []arg) {
+		Scanner In=new Scanner (System.in);
+		System.out.print("Factorial de ");
+		System.out.println("\n\nEs igual a: "+(sfactorial(In.nextInt())));
+		
+	}
+
+
+public static int sfactorial(int last) {
+	int fact=1;
+	for(int consec=1;consec<=last;consec++) {
+		System.out.print(fact+" * "+consec+" = ");
+		fact=consec*fact;
+		System.out.println(fact);
+	}
+	return fact;
+}
+}

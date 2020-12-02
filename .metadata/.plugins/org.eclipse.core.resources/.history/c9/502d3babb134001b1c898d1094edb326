@@ -1,0 +1,23 @@
+package Exersice;
+import java.util.Scanner;
+public class Fibonnaci {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int last,fibo=0;
+		Scanner In=new Scanner(System.in);
+		System.out.print("Indique la cantidad del serial a mostrar: ");
+		last=In.nextInt();
+		for (int consec=last;consec>=0;consec--) {
+			fibo=consec+last;
+			System.out.print(fibo);
+		}
+	}
+
+}
+
+// Finbonacci: sum of previous numbers, acumulate.
+// fib(0)=0
+// fib(1)=0+1
+// fib(2)=0+1+2
+// fib(3)=0+1+2+3

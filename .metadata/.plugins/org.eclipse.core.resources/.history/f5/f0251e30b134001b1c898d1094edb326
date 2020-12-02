@@ -1,0 +1,21 @@
+package Exersice;
+import java.util.Scanner;
+public class Fibonnaci {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int last;
+		Scanner In=new Scanner(System.in);
+		last=In.nextInt();
+		for (int consec=0;consec<=last;consec++) {
+			System.out.print((consec+last));
+		}
+	}
+
+}
+
+// Finbonacci: sum of previous numbers, acumulate.
+// fib(0)=0
+// fib(1)=0+1
+// fib(2)=0+1+2
+// fib(3)=0+1+2+3

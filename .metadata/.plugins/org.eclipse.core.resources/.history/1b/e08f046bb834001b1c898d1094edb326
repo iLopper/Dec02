@@ -1,0 +1,18 @@
+package Exersice;
+import java.util.Scanner;
+public class factorial {
+	public static void main(String []arg) {
+		Scanner In=new Scanner (System.in);
+		System.out.print("Factorial de ");
+		sfactorial(In.nextInt());
+	}
+
+
+public static void sfactorial(int last) {
+	int fact=0;
+	for(int consec=0;consec<=last;consec++) {
+		fact=consec*fact;
+		System.out.println(fact+" ");
+	}
+}
+}
